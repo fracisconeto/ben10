@@ -1,0 +1,28 @@
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+import alienigenas from '@/views/alienigenas.vue'
+import personagens from '@/views/personagens.vue'
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: HomeView,
+    },
+    {
+      path: '/alienigenas',
+      name: 'alienigenas',
+      component: alienigenas
+    },
+    
+    {
+      path:'/personagens',
+      name: 'personagens',
+      component: personagens
+    }
+  ],
+})
+
+export default router
