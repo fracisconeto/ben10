@@ -49,9 +49,9 @@ function destransformarInsectoide() { insectoide.value = imgBen10 }
       <div class="card">
         <div class="container-img">
           <img :src="chama" alt="Chama" />
-          <button @click="destransformarChama" class="btn-destransforma">Destransforma</button>
         </div>
         <div class="nome-ali"><h3>Chama</h3></div>
+        <button @click="destransformarChama" class="btn-destransforma">Destransforma</button>
         <div class="descricao-ali">
           <p>Um alienígena de fogo vindo do planeta Pyros. Controla e dispara chamas intensas com o corpo em brasa.</p>
         </div>
@@ -60,9 +60,9 @@ function destransformarInsectoide() { insectoide.value = imgBen10 }
       <div class="card">
         <div class="container-img">
           <img :src="quatroBracos" alt="Quatro Braços" />
-          <button @click="destransformarQuatroBracos" class="btn-destransforma">Destransforma</button>
         </div>
         <div class="nome-ali"><h3>Quatro Braços</h3></div>
+        <button @click="destransformarQuatroBracos" class="btn-destransforma">Destransforma</button>
         <div class="descricao-ali">
           <p>Gigante musculoso de enorme força física, ideal para batalhas pesadas. Pode pular muito alto e causar tremores com impacto.</p>
         </div>
@@ -71,9 +71,9 @@ function destransformarInsectoide() { insectoide.value = imgBen10 }
       <div class="card">
         <div class="container-img">
           <img :src="xlr8" alt="XLR8" />
-          <button @click="destransformarXlr8" class="btn-destransforma">Destransforma</button>
         </div>
         <div class="nome-ali"><h3>XLR8</h3></div>
+        <button @click="destransformarXlr8" class="btn-destransforma">Destransforma</button>
         <div class="descricao-ali">
           <p>Extremamente rápido, com corpo aerodinâmico e rodas nos pés. É perfeito para fugas rápidas e ataques velozes.</p>
         </div>
@@ -82,9 +82,9 @@ function destransformarInsectoide() { insectoide.value = imgBen10 }
       <div class="card">
         <div class="container-img">
           <img :src="massaCinza" alt="Massa Cinzenta" />
-          <button @click="destransformarMassaCinza" class="btn-destransforma">Destransforma</button>
         </div>
         <div class="nome-ali"><h3>Massa Cinzenta</h3></div>
+        <button @click="destransformarMassaCinza" class="btn-destransforma">Destransforma</button>
         <div class="descricao-ali">
           <p>Pequeno e superinteligente. Usa lógica, ciência e estratégia para resolver problemas e hackear qualquer coisa.</p>
         </div>
@@ -93,9 +93,9 @@ function destransformarInsectoide() { insectoide.value = imgBen10 }
       <div class="card">
         <div class="container-img">
           <img :src="diamante" alt="Diamante" />
-          <button @click="destransformarDiamante" class="btn-destransforma">Destransforma</button>
         </div>
         <div class="nome-ali"><h3>Diamante</h3></div>
+        <button @click="destransformarDiamante" class="btn-destransforma">Destransforma</button>
         <div class="descricao-ali">
           <p>Corpo de cristal superduro. Pode disparar estilhaços, criar armas com os braços e refletir ataques de energia.</p>
         </div>
@@ -104,9 +104,9 @@ function destransformarInsectoide() { insectoide.value = imgBen10 }
       <div class="card">
         <div class="container-img">
           <img :src="coisa" alt="Coisa" />
-          <button @click="destransformarCoisa" class="btn-destransforma">Destransforma</button>
         </div>
         <div class="nome-ali"><h3>Coisa</h3></div>
+        <button @click="destransformarCoisa" class="btn-destransforma">Destransforma</button>
         <div class="descricao-ali">
           <p>Criatura feroz com sentidos aguçados, mesmo sem olhos. Excelente rastreador e ótimo em combates corpo a corpo.</p>
         </div>
@@ -115,9 +115,9 @@ function destransformarInsectoide() { insectoide.value = imgBen10 }
       <div class="card">
         <div class="container-img">
           <img :src="ultraT" alt="Ultra T" />
-          <button @click="destransformarUltraT" class="btn-destransforma">Destransforma</button>
         </div>
         <div class="nome-ali"><h3>Ultra T</h3></div>
+        <button @click="destransformarUltraT" class="btn-destransforma">Destransforma</button>
         <div class="descricao-ali">
           <p>Alienígena biomecânico que pode se fundir com tecnologia para melhorá-la e controlá-la. Corpo líquido e metálico.</p>
         </div>
@@ -126,9 +126,9 @@ function destransformarInsectoide() { insectoide.value = imgBen10 }
       <div class="card">
         <div class="container-img">
           <img :src="fantasmatico" alt="Fantasmático" />
-          <button @click="destransformarFantasmatico" class="btn-destransforma">Destransforma</button>
         </div>
         <div class="nome-ali"><h3>Fantasmático</h3></div>
+        <button @click="destransformarFantasmatico" class="btn-destransforma">Destransforma</button>
         <div class="descricao-ali">
           <p>Alien fantasmagórico com poder de ficar invisível, atravessar paredes e possuir corpos. Um dos mais sombrios.</p>
         </div>
@@ -137,9 +137,9 @@ function destransformarInsectoide() { insectoide.value = imgBen10 }
       <div class="card">
         <div class="container-img">
           <img :src="aquatico" alt="Aquático" />
-          <button @click="destransformarAquatico" class="btn-destransforma">Destransforma</button>
         </div>
         <div class="nome-ali"><h3>Aquático</h3></div>
+        <button @click="destransformarAquatico" class="btn-destransforma">Destransforma</button>
         <div class="descricao-ali">
           <p>Veloz e poderoso na água. Possui mandíbulas fortes e nadadeiras retráteis. Excelente para missões subaquáticas.</p>
         </div>
@@ -148,9 +148,9 @@ function destransformarInsectoide() { insectoide.value = imgBen10 }
       <div class="card">
         <div class="container-img">
           <img :src="insectoide" alt="Insectóide" />
-          <button @click="destransformarInsectoide" class="btn-destransforma">Destransforma</button>
         </div>
         <div class="nome-ali"><h3>Insectóide</h3></div>
+        <button @click="destransformarInsectoide" class="btn-destransforma">Destransforma</button>
         <div class="descricao-ali">
           <p>Inseto voador com múltiplos olhos. Dispara gosma pegajosa e é muito ágil no ar. Incomum, mas versátil.</p>
         </div>
