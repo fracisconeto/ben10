@@ -1,35 +1,51 @@
 <script setup>
+// import { ref } from 'vue';
 import { RouterLink } from 'vue-router'
+import fundo from "../assets/img/classico/fundo.webp"
+
+const alunos = [
+  { id: 1, name: 'Francisco' },
+  { id: 2, name: 'Heloisa' },
+
+];
 
 </script>
 
 <template>
   <section class="series-ben10">
-        <div class="container-fundo">
-          <img src="../assets/img/classico/fundo.webp" alt="" />
-        </div>
-        <h2>É hora do herói!</h2>
+    <div class="container-fundo">
+      <img v-if="fundo" :src="fundo" alt="" />
 
-        <div class="serie">
-         
-          <p>
-            Descubra todos os alienígenas do Omnitrix e mergulhe no universo do Ben 10 clássico.
 
-          </p>
-          <RouterLink to="/alienigenas" class="btn-link">Ver Alienígenas</RouterLink>
-          <RouterLink to="/personagens" class="btn-link">Ver Personagens</RouterLink>
-        </div>
-      </section>
-      <footer>
-        <div class="conteiner-roda">
-          <div class="roda-p">
-          <p>Fan site – Ben 10 © Cartoon Network</p>
-        </div>
-        <div class="roda-p">
-          <p>Política de Privacidade | Contato</p>
+      <h2>É hora do herói!</h2>
+
+      <div class="serie">
+
+        <p>
+          Descubra todos os alienígenas do Omnitrix e mergulhe no universo do Ben 10 clássico.
+
+        </p>
+        <RouterLink to="/alienigenas" class="btn-link">Ver Alienígenas</RouterLink>
+        <RouterLink to="/personagens" class="btn-link">Ver Personagens</RouterLink>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="conteiner-roda">
+      <div class="roda-p">
+        <p>Fan site – Ben 10 © Cartoon Network</p>
+      </div>
+
+
+      <div class="roda-p">
+        <div v-for="aluno in alunos" :key="aluno.id">
+          <p>Aluno: {{ aluno.name }}</p>
         </div>
       </div>
-      </footer> 
+
+    </div>
+  
+  </footer>
 </template>
 
 <style scoped>
@@ -38,6 +54,7 @@ import { RouterLink } from 'vue-router'
   padding: 2rem;
   position: relative;
   background-color: #111;
+
 }
 
 .container-fundo img {
@@ -48,7 +65,8 @@ import { RouterLink } from 'vue-router'
   top: 0;
   left: 0;
   z-index: 0;
-  
+
+
 }
 
 .series-ben10 h2 {
@@ -96,18 +114,18 @@ footer {
   padding: 1rem 0;
   border-top: 2px solid #00ff00;
   margin-top: 0rem;
-  height: 119px;
+  height: 135px;
 }
 
 .conteiner-roda {
-  max-width: 1000px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
   padding: 0 1rem;
-  margin-top: 20px;
- 
+  margin: 20px auto 0;
+  max-width: 1000px;
+  flex-wrap: nowrap;
 }
 
 .roda-p {
@@ -116,7 +134,12 @@ footer {
   padding: 0.5rem;
 }
 
+
+
+
+
 .roda-p p {
   margin: 0;
   font-size: 0.9rem;
-}</style>
+}
+</style>

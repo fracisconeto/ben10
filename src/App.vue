@@ -23,7 +23,6 @@ import { RouterLink, RouterView } from 'vue-router'
 <style scoped>
 
 
-
 body {
   background-color: #0c0c0c;
   color: white;
@@ -41,6 +40,8 @@ nav {
 
 .logo-nav img {
   height: 50px;
+  background-color: #000;
+
 }
 
 /* Estilo para os RouterLinks */
@@ -49,5 +50,6 @@ nav {
   text-decoration: none;
   margin-left: 2rem;
   font-size: 1.1rem;
+  background-color: #000;
 }
 </style>
