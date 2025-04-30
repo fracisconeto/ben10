@@ -141,7 +141,7 @@ import vilaoImg from '../assets/img/classico/vilão.png'
     height: 200px;
     object-fit: contain;
     margin-bottom: 10px;
-  }
+    }
   
   .nome-ali h3 {
     font-size: 20px;
