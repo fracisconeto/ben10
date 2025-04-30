@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-import imgBen10 from '../assets/img/classico/ben10.png'
+import imgBen10 from '../assets/img/classico/ben10-2.png'
 
 import imgChama from '../assets/img/classico/3.png'
 import imgQuatroBracos from '../assets/img/classico/1.png'
