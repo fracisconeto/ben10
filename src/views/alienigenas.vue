@@ -263,4 +263,35 @@ footer {
   display: block;
   border-radius: 5px;
 }
+@media (max-width: 768px) {
+  .alienigenas {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .container-img img {
+    height: auto;
+    max-height: 250px;
+  }
+
+  .descricao-ali {
+    height: auto;
+  }
+
+  footer {
+    height: auto;
+    text-align: center;
+  }
+
+  .conteiner-roda {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .roda-p {
+    flex: none;
+    width: 100%;
+  }
+}
 </style>

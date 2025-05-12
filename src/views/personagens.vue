@@ -186,5 +186,45 @@ import vilaoImg from '../assets/img/classico/vilão.png'
 .roda-p p {
   margin: 0;
   font-size: 0.9rem;
+}@media (max-width: 768px) {
+  .personagens {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 320px;
+    height: 440px; /* mantém altura igual mesmo em telas menores */
+  }
+
+  .container-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .descricao-ali {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  footer {
+    height: auto;
+    text-align: center;
+  }
+
+  .conteiner-roda {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .roda-p {
+    width: 100%;
+  }
 }
+
   </style>
