@@ -1,50 +1,65 @@
 <script setup>
-// import { ref } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue'
 import { RouterLink } from 'vue-router'
-import fundo from "../assets/img/classico/fundo.webp"
 
+// Importando imagens
+import fundoDesktop from "../assets/img/classico/fundo.webp"
+import fundoResponsivo from "../assets/img/classico/responsive.webp"
+
+// Referência reativa para a imagem atual de fundo
+const fundo = ref(null)
+
+// Função para atualizar imagem com base na largura da tela
+function updateFundo() {
+  fundo.value = window.innerWidth <= 768 ? fundoResponsivo : fundoDesktop
+}
+
+// Detecta mudança de tamanho da tela
+onMounted(() => {
+  updateFundo()
+  window.addEventListener('resize', updateFundo)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateFundo)
+})
+
+// Lista de alunos
 const alunos = [
   { id: 1, name: 'Francisco' },
   { id: 2, name: 'Heloisa' },
-
-];
-
+]
 </script>
 
 <template>
   <section class="series-ben10">
     <div class="container-fundo">
-      <img v-if="fundo" :src="fundo" alt="" />
-
+      <img v-if="fundo" :src="fundo" alt="Fundo Ben 10" />
 
       <h2>É hora do herói!</h2>
 
       <div class="serie">
-
         <p>
           Descubra todos os alienígenas do Omnitrix e mergulhe no universo do Ben 10 clássico.
-
         </p>
         <RouterLink to="/alienigenas" class="btn-link">Ver Alienígenas</RouterLink>
         <RouterLink to="/personagens" class="btn-link">Ver Personagens</RouterLink>
       </div>
     </div>
   </section>
+
   <footer>
     <div class="conteiner-roda">
       <div class="roda-p">
         <p>Fan site – Ben 10 © Cartoon Network</p>
       </div>
 
-
       <div class="roda-p">
         <div v-for="aluno in alunos" :key="aluno.id">
           <p>Aluno: {{ aluno.name }}</p>
         </div>
       </div>
-
     </div>
-  
   </footer>
 </template>
 
@@ -54,7 +69,6 @@ const alunos = [
   padding: 2rem;
   position: relative;
   background-color: #111;
-
 }
 
 .container-fundo img {
@@ -65,8 +79,6 @@ const alunos = [
   top: 0;
   left: 0;
   z-index: 0;
-
-
 }
 
 .series-ben10 h2 {
@@ -87,7 +99,6 @@ const alunos = [
   padding: 1.5rem;
   border: 1px solid #00ff00;
   color: white;
-
 }
 
 .serie p {
@@ -106,7 +117,6 @@ const alunos = [
   font-size: 1.2rem;
   border: none;
 }
-
 
 footer {
   background-color: #000;
@@ -133,10 +143,6 @@ footer {
   text-align: center;
   padding: 0.5rem;
 }
-
-
-
-
 
 .roda-p p {
   margin: 0;
